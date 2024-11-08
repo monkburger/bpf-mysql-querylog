@@ -12,7 +12,7 @@ The program is version-aware, meaning it uses offsets specific to each supported
 Requirements
 
     Python Version: Python 3.6 or higher
-    BPF Library: The bcc Python package (install with pip install bcc)
+    BPF Library: (bcc) via yum/dnf/apt. 
 
 Python Libraries
 
@@ -23,7 +23,18 @@ Python Libraries
     typing (for type hints)
     bcc (for BPF support)
 
-Example Output: 
+Getting Started
+
+Clone the Repository:
+
+    git clone https://github.com/your-username/mysql-bpf-query-monitor.git
+    cd mysql-bpf-query-monitor
+
+Run the script:
+
+    python3 mysql_query_monitor.py --path /path/to/mysqld --duration-threshold 10 --log /path/to/output.log
+
+Output 
 
     Detected MySQL version 8.0 (Using offsets (510, 518))
     Monitoring MySQL queries... Press Ctrl+C to stop.
