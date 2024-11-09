@@ -1,5 +1,3 @@
-This is a Pthon-based tool that uses BPF (Berkeley Packet Filter) to trace MySQL query executions by attaching to specific functions in the MySQL server. 
-
 This tool leverages BPF to dynamically attach to MySQL's mysql_execute_command function. By monitoring this function in real-time, it can capture:
 
     The query text
