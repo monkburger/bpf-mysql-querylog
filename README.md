@@ -1,9 +1,9 @@
 This tool leverages BPF to dynamically attach to MySQL's mysql_execute_command function. By monitoring this function in real-time, it can capture:
 
-    The query text
-    The execution time of the query
-    Whether the query was truncated
-    Date/time
+- The query text
+- The execution time of the query (in msec)
+- Whether the query was truncated
+- Date/time
 
 The program is version-aware, meaning it uses offsets specific to each supported MySQL version (5.7, 8.0, 8.4) to access internal MySQL structures. 
 
