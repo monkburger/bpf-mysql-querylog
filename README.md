@@ -43,7 +43,7 @@ Known Limitations
 
 - Offset Compatibility: This tool supports specific MySQL versions (5.7, 8.0, 8.4) and may require updating offsets for other versions. 
 - Debugging Symbols: If offsets change across MySQL updates, new offsets will need to be calculated. (See below) 
-- Kernel Compatibility: Ensure the kernel version supports BPF and that BPF is configured correctly. All of my testing was performed on AlmaLinux 8+
+- Kernel Compatibility: Ensure the kernel version supports BPF and that BPF is configured correctly. All of my testing was performed on AlmaLinux 8+ with MySQL 8.0+
   
 Updating Offsets
 
